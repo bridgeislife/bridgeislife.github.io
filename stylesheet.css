@@ -1,5 +1,15 @@
 /* CSS */
 
+
+
+
+
+
+/* --------------------------------------- */
+/*       Important crap, don't touch       */
+/* --------------------------------------- */
+
+/* ---------------- Setup Body ---------------- */
 body,
 html {
   height: 100%;
@@ -8,6 +18,8 @@ html {
   height: 100%;
   padding: 0;
 }
+
+/* ---------------- Setup Navbar ---------------- */
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
