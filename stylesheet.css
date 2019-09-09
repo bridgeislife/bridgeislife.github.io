@@ -168,6 +168,25 @@ html, body {
   padding: 0;
   z-index: 100;
 }
+
+
+.navbar .navbar-brand {
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-filter: drop-shadow(3px 3px 3px #222);
+  filter: drop-shadow(3px 3px 3px #222);
+}
+
+.navbar .navbar-brand:hover 
+{
+  margin-top: 0.1em;
+  -webkit-filter: drop-shadow(8px 8px 8px #000);
+  filter: drop-shadow(8px 8px 8px #000);
+}
+
+
 .navbar #brandLinkContainer {
   width: 80px;
   position: absolute;
