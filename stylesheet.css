@@ -23,7 +23,7 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
-  filter: blur(3px);
+  filter: blur(4px);
   z-index: -99;
 }
 
@@ -32,6 +32,19 @@
   /* display: inline-block; */
   -webkit-filter: drop-shadow(6px 6px 6px #222);
   filter: drop-shadow(6px 6px 6px #222);
+  width: 40em;
+}
+
+@media (max-width: 767px) {
+  #mainlogo {
+    width: 25em;
+  }
+}
+
+@media (max-width: 375px) {
+  #mainlogo {
+    width: 15em;
+  }
 }
 
 #mainlogowrapper {
