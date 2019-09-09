@@ -1,23 +1,37 @@
 /* CSS */
 
+.title {
+  padding-bottom: 1em;
+  font-size: 2em;
+}
 
 
+.para {
+  padding: .425em;
+  font-size: 1.3em;
+  text-align: justify;
+}
 
 
+/* ---------------- Setup Body ---------------- */
+
+body {
+  /* height: 100%; */
+  background-color: #1f1f1f;
+}
+
+.body-content {
+  /* height: 100%; */
+  margin-top: 100px;
+  padding: 0;
+  color: #fff;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
 
 /* --------------------------------------- */
 /*       Important crap, don't touch       */
 /* --------------------------------------- */
 
-/* ---------------- Setup Body ---------------- */
-body,
-html {
-  height: 100%;
-}
-.body-content {
-  height: 100%;
-  padding: 0;
-}
 
 /* ---------------- Setup Navbar ---------------- */
 .navbar .navbar-nav {
@@ -29,7 +43,7 @@ html {
   text-align: center;
 }
 .navbar {
-  background-color: #14294f;
+  background-color: #6680cc;
   border: 0;
 }
 .navbar #navContainer {
@@ -47,16 +61,16 @@ html {
   }
 }
 .navbar .nav-link {
-  color: #fff !important;
+  color: #1f1f1f !important;
   transition: background-color ease-in-out 0.2s, color ease-in-out 0.2s;
   padding-left: 20px;
   padding-right: 20px;
   cursor: pointer;
   text-align: center;
-  font-family: Montserrat-SemiBold;
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
   font-style: normal;
-  font-weight: normal;
-  font-size: 1.1em;
+  font-weight: bold;
+  font-size: 1.5em;
 }
 @media (max-width: 767px) {
   .navbar .nav-link {
@@ -66,8 +80,8 @@ html {
   }
 }
 .navbar .nav-link:hover {
-  color: #f7c811 !important;
-  background-color: #0D1A33 !important;
+  color: #6680cc !important;
+  background-color: #1f1f1f !important;
 }
 .navbar .navbar-toggle {
   margin-left: 15px;

@@ -45,8 +45,6 @@ function setup_nav() {
     });
 }
 
-
-
 // --------------------
 //       Events
 // --------------------
@@ -58,7 +56,6 @@ function setup_nav() {
 $(document).ready(function() {
     // Load Nav html. Call setup_nav when done loading. 
     $('#nav_target').load("nav_bar.html", setup_nav);
-
 
 });
 
