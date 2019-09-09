@@ -9,7 +9,7 @@ To avoid this, it needs to be run in a webserver. Either push changes directly t
 them deployed, or run a local webserver. 
 
 ### Local Python Server
-To run a local webserver in python, first go to the directory of the site, then run:
+To run a local webserver in python, first go to the directory of the site, then run: (python3)
 
-    python3 -m http.server
+    python -m http.server
 
