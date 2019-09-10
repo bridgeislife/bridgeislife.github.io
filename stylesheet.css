@@ -72,11 +72,13 @@ body {
   padding: 0;
   color: #fff;
   font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-
+}
 
 .body-content-margin {
   margin-top: 100px;
 }
+  
+
 
 /* --------------------------------------- */
 /*       Important crap, don't touch       */
