@@ -71,7 +71,8 @@ body {
 .body-content {
   padding: 0;
   color: #fff;
-  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
+  /*font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;*/
 }
 
 .body-content-margin {
