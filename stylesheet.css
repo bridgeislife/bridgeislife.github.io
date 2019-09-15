@@ -115,14 +115,17 @@ html, body {
 }
 .navbar #navContainer {
   position: relative;
+  width: 100% !important;
+  padding-left: 0;
+  padding-right: 0;
 }
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
   .navbar #navContainer {
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .navbar #navContainer {
     padding-right: 100px !important;
   }
@@ -139,7 +142,7 @@ html, body {
   font-weight: bold;
   font-size: 1.2em;
 }
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
   .navbar .nav-link {
     font-size: 1.3em !important;
     padding-top: 0.7em;
@@ -167,12 +170,12 @@ html, body {
 .navbar .navbar-toggle:hover {
   background-color: transparent;
 }
-@media (min-width: 991px) {
+@media (min-width: 1200px) {
   .navbar .navbar-collapse {
     padding-left: 80px;
   }
 }
-.navbar .navbar-brand {
+.navbar #home_btn {
   height: 80px;
   width: auto;
   margin: 0;
@@ -182,7 +185,23 @@ html, body {
 }
 
 
-.navbar .navbar-brand {
+@media (max-width: 1200px) {
+  .navbar #home_btn {
+    height: 50px;
+  }
+  .navbar #brandLinkContainer {
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar #brandLinkContainer {
+    padding-left: 30px;
+  }
+}
+
+
+.navbar #home_btn {
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
@@ -191,7 +210,7 @@ html, body {
   filter: drop-shadow(3px 3px 3px #222);
 }
 
-.navbar .navbar-brand:hover 
+.navbar #home_btn:hover 
 {
   margin-top: 0.1em;
   -webkit-filter: drop-shadow(8px 8px 8px #000);
@@ -200,24 +219,21 @@ html, body {
 
 
 .navbar #brandLinkContainer {
-  width: 80px;
   position: absolute;
   margin-top: 10px;
-  height: 50px;
+  top: 0;
 }
+
 .navbar #brandLinkContainer #brandLink {
   cursor: pointer;
 }
-@media (max-width: 991px) {
-  .navbar #brandLinkContainer {
-    display: none;
-  }
-}
+
+
 .navbar #socialIconContainer {
   position: absolute;
   display: inline-block;
   top: 12px;
-  right: 50px;
+  right: 3%;
   padding: inherit;
 }
 .navbar #socialIconContainer .group {
@@ -235,6 +251,7 @@ html, body {
   opacity: 0;
 }
 
+/* -------------- Collapse Animation -------------- */
 
 .navbar-toggle * {
     -webkit-transition: all 0.4s ease;
@@ -291,5 +308,48 @@ html, body {
   }
 
 
+/* -------------- Change Collapse Point -------------- */
+@media (max-width: 1200px) {
+  .navbar-header {
+      float: none;
+      -webkit-filter: drop-shadow(4px 4px 4px #222);
+      filter: drop-shadow(4px 4px 4px #222);
+      z-index: 90;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+    z-index: 89;
+    margin-top: 8px;
+    border-top: 1px solid transparent;
+    border-color: rgba(255,255,255,0.3) !important;
+    /* box-shadow:inset 0 5px 5px rgba(0,0,0,.3)  */
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+}
 
-  
+
