@@ -71,8 +71,7 @@ body {
 .body-content {
   padding: 0;
   color: #fff;
-  font-family: "Century Gothic","Apple Gothic",AppleGothic,"URW Gothic L","Avant Garde",Futura,sans-serif;
-  /*font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;*/
+  font-family: "Century Gothic","didact_gothicregular",sans-serif;
 }
 
 .body-content-margin {
@@ -88,6 +87,16 @@ body {
 html, body {
   width:100%;
 }
+
+@font-face {
+  font-family: 'didact_gothicregular';
+  src: url('fonts/didactgothic-regular-webfont.woff2') format('woff2'),
+       url('fonts/didactgothic-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 /* ---------------- Setup Navbar ---------------- */
 .navbar .navbar-nav {
   display: inline-block;
@@ -125,7 +134,7 @@ html, body {
   padding-right: 20px;
   cursor: pointer;
   text-align: center;
-  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  font-family: "Century Gothic","didact_gothicregular",sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 1.2em;
